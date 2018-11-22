@@ -1,0 +1,9 @@
+<h1>Post Detail</h1>
+
+<a href="{% url 'posts:update' pk=post.pk %}">Edit</a>
+
+<div>
+    <img src="{{ post.image.url }}"></img>
+    <p>{{ post.content }}</p>
+    
+</div>
